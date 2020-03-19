@@ -8,7 +8,6 @@ pipeline {
         stage('pre') {
             steps {
                 sh 'npm --version'
-                sh 'docker --version'
             }
         }
         /*stage('Build') {
