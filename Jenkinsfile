@@ -4,11 +4,12 @@ pipeline {
             label 'nodejs'
         }
     }
-    
+
     stages {
         stage('pre') {
             steps {
                 sh 'npm --version'
+                sh 'ls'
                 sh 'docker --version'
             }
         }
