@@ -1,12 +1,12 @@
 pipeline {
     agent none
-    
+
     stages {
         stage('start') {
             steps {
                 script {
                     openshift.withCluster() {
-                        openshift.withProject( 'ben-test' ) {
+                        openshift.withProject() {
                             echo "Hello from project ${openshift.project()} in cluster ${openshift.cluster()}"
                         }
                     }
