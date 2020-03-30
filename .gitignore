@@ -59,4 +59,4 @@ typings/
 .env
 
 # custome
-gitquick.bat
+gitquick.ps1
